@@ -3,13 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { CalendarPlus, FileText, LayoutDashboard, LogOut, Settings, Users } from "lucide-react";
+import { CalendarPlus, FileText, LayoutDashboard, LogOut, Settings, Users, WalletCards } from "lucide-react";
 import { supabase } from "../lib/supabase";
 
 const itens = [
   { href: "/admin", label: "Visão geral", icon: LayoutDashboard },
   { href: "/admin/turnos", label: "Registrar plantão", icon: CalendarPlus },
   { href: "/admin/profissionais", label: "Profissionais", icon: Users },
+  { href: "/admin/repasses", label: "Repasses", icon: WalletCards },
   { href: "/admin/configuracoes", label: "Configurações", icon: Settings },
   { href: "/admin/relatorios", label: "Relatórios", icon: FileText },
 ];
